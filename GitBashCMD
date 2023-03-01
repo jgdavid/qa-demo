@@ -1,0 +1,61 @@
+# git config --global user.name "[USERNAME]"
+$ git config --global user.name "ellohez"
+
+# git config --global user.email "[EMAIL]"
+$ git config --global user.email "helenpjobs@gmail.com"
+
+# To check a specific keys value
+git config user.name 
+
+# To set main as the default branch name
+git config --global init.defaultBranch main
+
+
+# Open GitBash and type in 
+ssh-keygen -t rsa -f ~/.ssh/id_rsa <<< y
+# Skip passphrase!!
+# Type in 
+cat ~/.ssh/id_rsa.pub
+
+now copy the key (begins with ssh-rsa and paste in as a new SSH key to GitHub (Add SSH)
+Give it a name of GitBashSSH or similar
+
+# Test the connection in Git Bash CLI
+ssh -T git@github.com
+# Say yes to the messages and eventually get this message
+#Hi username! You've successfully authenticated, but GitHub does not provide shell access.
+
+# Make sure you are in the right directory - 
+mkdir [folder name]
+cd [path]
+git init
+
+
+# To get Repository SSH URL - go to repository on GitHub and click "<> Code" then SSH and copy the key
+git clone [REPOSITORY_SSH_URL]
+git clone git@github.com:ellohez/qa-demo.git
+
+# Print to screen
+echo "text"
+# Print to file
+echo "Hello World" >> file.txt
+
+git status
+git log --oneline
+
+# To put your file in the staging area
+git add [filename]
+# To add all files with a specific file extension e.g. .php
+git add \*.php
+
+# Saves changes locally
+git commit - m "Your commit message here..."
+
+# To get Git to completely ignore files add them to .gitignore file (is this a .txt)
+
+# Push files to the remote repository
+git push
+# Options
+# git push -u [REMOTE] [REMOTE_BRANCH]
+# e.g.
+git push -u origin main
