@@ -13,7 +13,6 @@ git config user.name
 # To set main as the default branch name
 git config --global init.defaultBranch main
 
-
 # Open GitBash and type in 
 ssh-keygen -t rsa -f ~/.ssh/id_rsa <<< y
 # Skip passphrase!!
@@ -30,9 +29,12 @@ ssh -T git@github.com
 
 # Make sure you are in the right directory - 
 mkdir [folder name]
+# to list files
+ls 
 cd [path]
-git init
 
+# initialise an empty repository locally
+git init
 
 # To get Repository SSH URL - go to repository on GitHub and click "<> Code" then SSH and copy the key
 git clone [REPOSITORY_SSH_URL]
