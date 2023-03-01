@@ -1,3 +1,6 @@
+# Git bug - to get around it (temporarily during lab)
+git update-git-for-windows
+
 # git config --global user.name "[USERNAME]"
 $ git config --global user.name "ellohez"
 
